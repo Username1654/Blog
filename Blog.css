@@ -1,0 +1,128 @@
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(216, 211, 211);
+}
+#M{
+    text-align: center;
+}
+#Con{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 80%;
+    
+}
+header{
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 5%;
+}
+header h1{
+    font-size: 3em;
+}
+header ul{
+
+}
+header li{
+    margin: 10px;
+    font-size: 1.5em;
+}
+header > ul,li{
+    list-style-type: none;
+    margin-top: 10px;
+    display: inline;
+}
+#mid{
+    display: flex;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: white;
+   
+}
+#mid img{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width:12.5em;
+    height: 12.5em;
+    border-radius: 10%;
+   margin-left: 30px;
+
+}
+.body{
+    padding: 1em;
+    margin-right: 0.5em;
+}
+.body p{
+    padding: 1em;
+}
+ button{
+    background-color: black;
+    color: white;
+    font-size: 1em;
+    margin-top: 0.5em;
+    padding: 0.3em;
+    border-radius: 10%;
+
+}
+
+button:hover{
+    background-color: grey;
+}
+
+.Posts{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.Posts h3{
+    padding: 1em;
+}
+.Posts p{
+  padding: 0.5em;  
+}
+.P1, .P2, .P3{
+    background-color: white;
+    margin: 1em;
+    overflow: auto;
+    border-radius: 10%;
+    height: 15em;
+    width: 30%;
+    max-height: 800px;
+    align-content: center;
+    text-align: center;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 0.5em;
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+@media screen and (max-width: 480px) {
+    #mid{
+        display:block;
+        overflow: auto;
+    }
+    #mid img{
+       width: 60%;
+       height:60%;
+    }
+    .Posts{
+        display: block;
+    }
+    .P1, .P2, .P3{
+        width:100%;
+    }
+    h2{
+        text-align: left;
+    }
+  }
